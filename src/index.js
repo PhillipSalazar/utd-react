@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+//import signup from './signup/signup.js'
 
 
 class Index extends React.Component {
@@ -14,7 +14,7 @@ class Index extends React.Component {
         <App />
   );
   }
-  
+
 }
 const style={
   background:"red",
@@ -27,5 +27,3 @@ ReactDOM.render(<App />, rootElement);
 
 
 ReactDOM.render(<Index />, document.getElementById('root'));
-
-

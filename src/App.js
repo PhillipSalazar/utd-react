@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+import Signup from './signup/signup.js';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-             
+
          <div>
         <div  id="t1">
           <div  id="t2">
@@ -23,7 +27,12 @@ class App extends Component {
                     <a href="#t4"> <FontAwesomeIcon icon={faCoffee} id="cuatro"/></a>
                   </ul>
                   <div className="page" id="p1">
-                    <span className="title">Home</span><span class="hint">Like this pen to see the magic!...<br /> Just kidding, it won't happen anything but I'll be really happy If you do so.</span></li>
+                    <li className="icon fa fa-keyboard-o">
+                      <span className="title">
+                        <Signup>
+                        </Signup>
+                      </span>
+                      </li>
                   </div>
                   <div className="page" id="p2">
                     <li className="icon fa fa-keyboard-o"><span className="title">Type</span></li>
